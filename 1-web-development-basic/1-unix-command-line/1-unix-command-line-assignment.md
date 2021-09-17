@@ -1,60 +1,65 @@
-## Membuat sebuah folder kosong dengan nama-mu sendiri
+# Unix Command Line Technical Assignment
+
+This is the answer of the assignment which you can access from this Github link `https://github.com/impactbyte/full-stack-web-assignments/tree/master/01-Unix-Command-Line`
+
+
+Membuat sebuah folder kosong dengan nama-mu sendiri
 ```
 mkdir aurel
 ```
 
-## Di dalam folder tersebut buatlah folder sekolah 
+Di dalam folder tersebut buatlah folder sekolah 
 ```
 mkdir aurel/sekolah
 ```
 
-Folder kerja 
+Buatlah juga folder kerja 
 ``` 
 mkdir aurel/kerja
 ```
 
-## Masuk kedalam folder sekolah
+Masuk kedalam folder sekolah
 ```
 cd aurel/sekolah
 ```
 
-## Buat file dengan nama ijazah.txt
+Buat file dengan nama ijazah.txt
 ```
 touch ijazah.txt
 ```
 
-## Tampilkan isi dari file tersebut menggunakan CLI command
+Tampilkan isi dari file tersebut menggunakan CLI command
 ```
 cat ijazah.txt
 ```
 
-## Kemudian buat 1 file lagi dengan nama portfolio.txt
+Kemudian buat 1 file lagi dengan nama portfolio.txt
 ```
 touch portfolio.txt
 cat portfolio.txt
 ```
 
-## Keluar dari folder sekolah
+Keluar dari folder sekolah
 ```
 cd ..
 ```
 
-## Masuk kedalam folder kerja
+Masuk kedalam folder kerja
 ```
 cd kerja
 ```
 
-## Buat file dengan nama cv.txt
+Buat file dengan nama cv.txt
 ```
 touch cv.txt
 ```
 
-## Tampilkan isi dari file tersebut menggunakan CLI command
+Tampilkan isi dari file tersebut menggunakan CLI command
 ```
 cat cv.txt
 ```
 
-## Pada tahap ini kamu lupa jika sebenarnya file portfolio.txt seharusnya tidak berada pada folder sekolah, jadi kamu harus memindahkannya kedalam folder kerja
+Pada tahap ini kamu lupa jika sebenarnya file portfolio.txt seharusnya tidak berada pada folder sekolah, jadi kamu harus memindahkannya kedalam folder kerja
 ```
 mv ../sekolah/portfolio.txt .
 ```
