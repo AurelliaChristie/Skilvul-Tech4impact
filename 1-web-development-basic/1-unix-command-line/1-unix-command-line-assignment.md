@@ -1,8 +1,5 @@
 # Unix Command Line Technical Assignment
 
-This is the answer of the assignment which you can access from this Github link `https://github.com/impactbyte/full-stack-web-assignments/tree/master/01-Unix-Command-Line`
-
-
 Membuat sebuah folder kosong dengan nama-mu sendiri
 ```
 mkdir aurel
