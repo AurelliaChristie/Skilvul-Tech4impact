@@ -2,16 +2,15 @@
 
 This stage will cover the topic of Web Development Basic. There are 6 technical assignments. The questions of the assignments can be access through:
 
-- <a href=”https://github.com/impactbyte/full-stack-web-assignments/tree/master/01-Unix-Command-Line”>Unix Command Line</a>
+- [Unix Command Line](â€https://github.com/impactbyte/full-stack-web-assignments/tree/master/01-Unix-Command-Lineâ€)
 
-- <a href=”https://github.com/impactbyte/full-stack-web-assignments/tree/master/02-HTML
-”>HTML</a>
+- [HTML](â€https://github.com/impactbyte/full-stack-web-assignments/tree/master/02-HTMLâ€)
 
-- <a href=”https://github.com/impactbyte/full-stack-web-assignments/tree/master/03-CSS”>CSS</a>
+- [CSS](â€https://github.com/impactbyte/full-stack-web-assignments/tree/master/03-CSSâ€)
 
-- <a href=”https://github.com/impactbyte/full-stack-web-assignments/tree/master/05-Algorithm-and-Data-Structures”> Algorithm and Data Structure</a>
+- [Algorithm and Data Structure](â€https://github.com/impactbyte/full-stack-web-assignments/tree/master/05-Algorithm-and-Data-Structuresâ€)
 
-- <a href= “https://github.com/impactbyte/full-stack-web-assignments/tree/master/04-Git-and-Github”>Git and Github</a>
+- [Git and Github](â€œhttps://github.com/impactbyte/full-stack-web-assignments/tree/master/04-Git-and-Githubâ€)
 
-- <a href=”https://github.com/impactbyte/full-stack-web-assignments/tree/master/06-JavaScript-Dasar”>Basic JavaScript</a>
+- [Basic JavaScript](â€https://github.com/impactbyte/full-stack-web-assignments/tree/master/06-JavaScript-Dasarâ€)
 
