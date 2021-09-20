@@ -37,7 +37,7 @@ git touch aurelliachristie.md
 git add aurelliachristie.md
 ```
 
-8.Commit the change.
+8. Commit the change.
 ```
 git commit -m "aureliachristie.md"
 ```
