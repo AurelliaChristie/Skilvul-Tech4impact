@@ -31,7 +31,7 @@ git branch <name_of_the_branch>
 git checkout <name_of_the_branch>
 ```
 
-6 How do you remove modified or deleted files from the working directory?
+6. How do you remove modified or deleted files from the working directory?
 
 - Using `git rm`
 
