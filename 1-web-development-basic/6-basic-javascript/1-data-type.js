@@ -13,6 +13,9 @@ console.log(upperCase);
 const ageInDays = typeof age;
 console.log(ageInDays);
 
+/// Use built-in function of JavaScript to convert `age` from years to days
+const ageInDays = 365*age; /// 1 year = 365 days
+console.log(ageInDays);
 
 /// Question - 03
 /// Use built-in function of number data to take the first 2 decimals of pi

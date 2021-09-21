@@ -26,6 +26,7 @@ for (let number =  1; number <= 100; number++) {
 let primeCounter = 0;
 let number = 0;
 
+/// The looping will be stopped if the primeCounter has reached 50
 while (primeCounter < 50) {
     number++;
     let result = "prime";
@@ -56,8 +57,10 @@ console.log(fiftiethPrime);
 let oddCounter = 0;
 number = 0;
 
+/// The looping will be stopped if the oddCounter has reached 50
 do { 
     number++;
+    /// If a number has a remainder when it is divide by 2, then it is an odd number
     if(number % 2 !== 0){
         oddCounter++
     } 
