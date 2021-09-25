@@ -1,4 +1,46 @@
 /// Question - 01
+/// You are asked to summarize:
+/// - How many variable scope is there in JavaScript?
+/// - Explain briefly each of variable scope in JavaScript!
+/// - Create a simple implementation of each variable scope in JavaScript!
+
+/// Answer
+/// There are 3 variable scopes : 
+/// - Block scope: variables that are declared using `let` and `const` in a {} block cannot be accessed from outside the block (Variables declared using `var` can not have block scope since it is accessible outside the block).
+/// - Local / function scope : variables that are declared inside a function and are not accessible outside the function (created when a function starts and deleted when the function is completed).
+/// - Global scope: variables declared outside a function and are accessible throughout the file.
+/// Simple implementation:
+
+/// Block scope
+{
+  let a = 77;
+}
+console.log(a); // error
+
+{
+  let a = 77;
+  console.log(a); // 77
+}
+
+/// Local / function scope
+function myname(){
+  let b = "Aurellia";
+  console.log(b);
+}
+console.log(b); // error
+myname(); //"Aurellia"
+
+/// Global scope
+let c = "Christie";
+console.log(c); // "Christie"
+
+function myname(){
+  console.log(c);
+}
+myname(); // "Christie"
+
+
+/// Question - 02
 /// You are asked to analyze the codes below
 /// - what will console.log return?
 /// - what is the reason that the console.log won't return the value of "name" variable?
@@ -16,23 +58,3 @@ function printFirstName(name) {
 }
 
 console.log(printFirstName("Mariah Carey"));
-
-
-/// Question - 02
-/// You are asked to analyze the codes below
-/// - what will happen if we run the codes?
-/// - what is the reason of the output?
-///   - from the POV of salaryWithVar
-///   - from the POV of salaryWithConst
-
-/// Answer
-/// - The outputs will be '15000000' for the first console.log and 'ReferenceError: salaryWithConst is not defined' for the second one.
-/// - The reasons: this is the implementation of JavaScript Hoisting, which is JavaScript's default behavior of moving declarations to the top.
-///     - salaryWithVar will return 15000000 since it is declared using var. Variable declared with var will be hoisted and initialized, therefore it can be used before it has been declared.
-///     - salaryWithConst will return ReferenceError since it is declared using const. Variable declared with const are hoisted but not initialized, therefore it can't be used before it has been declared.
-
-console.log(salaryWithVar)
-console.log(salaryWithConst)
-
-var salaryWithVar = 15000000;
-const salaryWithConst = 15000000;

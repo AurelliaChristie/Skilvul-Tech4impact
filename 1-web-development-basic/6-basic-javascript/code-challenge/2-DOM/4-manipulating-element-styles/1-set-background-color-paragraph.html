@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>Set the background color of a paragraph</title>
+  </head>
+  <body>
+    <input type="button" value="Click to set paragraph background color" onclick="setBackground()">
+    <p>Welcome to DOM World</p>
+    <p>You will make a website more interactives</p> 
+  </body>
+  <script>
+      const paragraphs = document.getElementsByTagName("p")
+
+      function setBackground(){
+          paragraphs[0].style.backgroundColor = "red";
+          paragraphs[1].style.backgroundColor = "grey";
+      }
+  </script>
+</html>

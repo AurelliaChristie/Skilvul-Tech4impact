@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>Remove items from a dropdown list</title>
+  </head>
+  <body>
+    <form>
+      <select id="languageSelect">
+        <option>JavaScript</option>
+        <option>Python</option>
+        <option>Go</option>
+        <option>Ruby</option>
+      </select>
+      <input type="button" onclick="removeProgrammingLanguage()" value="Select and Remove">
+    </form>
+  </body>
+  <script>
+      let selector = document.getElementById('languageSelect');
+      const removeProgrammingLanguage = () => {selector.remove(selector.selectedIndex)}; 
+  </script>
+</html>

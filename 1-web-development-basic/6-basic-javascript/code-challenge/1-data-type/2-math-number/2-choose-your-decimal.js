@@ -1,5 +1,5 @@
 const chooseDecimals = (n,d) => {
-    if ((typeof n !== Number) || (typeof d !== Number)) {
+    if ((typeof n !== "number") || (typeof d !== "number")) {
         return "Your input is not a number";
     } else{
         return n.toFixed(d);

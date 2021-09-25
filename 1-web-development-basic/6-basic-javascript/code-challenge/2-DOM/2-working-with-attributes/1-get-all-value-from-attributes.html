@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+  </head>
+  <body>
+    <p>
+      <a id="skilvul-link" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.skilvul.com/">Skilvul</a>
+    </p>
+    <button onclick="getAttributes()">Click here to get  attributes value</button>
+  </body>
+  <script>
+      const attributes = []
+      
+      //   Take all HTML tags
+      const HTMLTags = document.getElementsByTagName("*")
+      
+      for(let i = 0; i<HTMLTags.length; i++){
+          if(HTMLTags[i].attributes.length){
+              for(let j=0; j<HTMLTags[i].attributes.length; j++){
+                  attributes.push([HTMLTags[i].attributes[j].localName, HTMLTags[i].attributes[j].value])
+              }
+          }
+      }
+
+      function getAttributes(){
+          for(let i=0; i<attributes.length; i++){
+              alert(`Attribute ${attributes[i][0]} has the value of ${attributes[i][1]}`)
+          }
+      }
+  </script>
+</html>
