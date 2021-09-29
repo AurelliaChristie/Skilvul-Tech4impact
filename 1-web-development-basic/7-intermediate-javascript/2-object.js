@@ -161,7 +161,7 @@ function calculateIncome(items){
 
     // Order result
     let finalResult = {};
-    orderKeys = Object.keys(result).sort();
+    let orderKeys = Object.keys(result).sort();
     for(let i=0; i < orderKeys.length; i++){
         finalResult[orderKeys[i]] = result[orderKeys[i]]
     }
