@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <h1>Number Storage</h1>
+    <form id = "form">
+        <label for="numbers"><b>Number</b></label>
+        <input type="number" placeholder="Enter A Number" name="numbers" id="numbers" required>
+        <br><br>
+        <button type="submit" id = "submit" onclick= add()>Submit</button>
+        <br><br>
+        <div id = "output"></div>
+    </form>
+    <script>
+        let form = document.getElementById("form");
+        let output = document.getElementById("output");
+        function add(){
+            event.preventDefault();
+            let currentValue = Number(sessionStorage.getItem("numbers"));
+            let number = Number(document.getElementById("numbers").value);
+            if(currentValue === null){
+                sessionStorage.setItem("numbers", number);
+            } else {
+                sessionStorage.setItem("numbers", currentValue + number);
+            }
+            output.innerHTML = `The previous value in the session storage is ${currentValue}. After adding up the number you input, the value becomes ${sessionStorage.getItem("numbers")}.`;
+            form.reset();
+        };
+    </script>
+</body>
+</html>

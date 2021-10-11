@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <h1>Log In</h1>
+    <form id = "form">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="username" required>
+        <br><br>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        <br><br>
+        <button type="submit" id = "submit" onclick=login()>Log In</button>
+    </form>
+    <script>
+        let form = document.getElementById("form");
+        
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function login(){
+            event.preventDefault();
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let cookie_uname = getCookie("username");
+            
+            if(cookie_uname === username){
+                alert("anda sudah login");
+            } else{
+                const d = new Date();
+                d.setTime(d.getTime() + (1*60*1000));
+                document.cookie = "username="+username+";expires="+d.toUTCString();
+                document.cookie = "password="+password+";expires="+d.toUTCString();
+                alert(`Welcome ${username}`);
+            }
+            form.reset();
+        };
+    </script>
+</body>
+</html>
