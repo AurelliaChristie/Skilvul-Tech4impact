@@ -1,0 +1,8 @@
+/* Reset all default style in browser */
+@tailwind base;
+
+/* Change our components to be responsive component */
+@tailwind components;
+
+/* Provide the utilities */
+@tailwind utilities;
